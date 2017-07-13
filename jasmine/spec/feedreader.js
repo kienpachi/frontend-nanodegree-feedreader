@@ -142,7 +142,7 @@ $(function() {
                 
                 loadFeed(1, function() {
                     done();
-                })
+                });
             });
         });
         
@@ -152,7 +152,7 @@ $(function() {
             var newFeed = $('.feed').html();
             // comparing them they shouldn't match
             expect(newFeed).not.toBe(feed);
-            done(); 
+            done();
         });
     });
 
