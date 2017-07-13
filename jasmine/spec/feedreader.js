@@ -62,17 +62,17 @@ $(function() {
         
         it('is hidden by default', function() {
             // validate that the class name is menu-hidden
-            expect(body.className).toContain('menu-hidden');
+            expect(body.classList).toContain('menu-hidden');
         });
 
         it('toggles properly', function() {
             // it's hidden by default, so when clicking for the first time
             // it shouldn't has the class 'menu-hidden'
             menu.click();
-            expect(body.className).not.toContain('menu-hidden');
+            expect(body.classList).not.toContain('menu-hidden');
             // when clicking for the 2nd time it should has it
             menu.click();
-            expect(body.className).toContain('menu-hidden');
+            expect(body.classList).toContain('menu-hidden');
         });
         
     });
